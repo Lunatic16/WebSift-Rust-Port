@@ -1,0 +1,65 @@
+# Fast debug builds but with optimized dependencies
+[profile.dev.package."*"]
+opt-level = 3
+
+# Testing Profile
+[profile.test]
+opt-level = 2           # Faster test execution
+debug = true            # Keep debug info for test failures
+
+# Paranoid (Maximum Safety Checks)
+[profile.paranoid]
+inherits = "release"
+overflow-checks = true
+debug-assertions = true
+incremental = false
+
+# Benchmarking Profile
+[profile.bench]
+inherits = "release"
+lto = "fat"
+codegen-units = 1
+debug = true            # Keep symbols for profiling tools
+
+# Smaller release binary
+[profile.release]
+opt-level = "z"
+lto = true
+
+# Best for Speed
+[profile.release]
+opt-level = 3           # Maximum optimization
+lto = "fat"             # Link-time optimization across all crates
+codegen-units = 1       # Better optimization at cost of compile time
+panic = "abort"         # Smaller binary, slightly faster (no unwinding)
+strip = false           # Keep symbols if you need debugging, otherwise true
+
+# Best for File Size
+[profile.release]
+opt-level = "z"         # Optimize aggressively for size
+lto = "fat"             # Link-time optimization, removes unused code
+codegen-units = 1       # Better optimization
+panic = "abort"         # No unwinding code
+strip = true            # Remove debugging symbols
+
+# Additional size reduction techniques:
+[profile.release]
+opt-level = "z"
+lto = "fat"
+codegen-units = 1
+panic = "abort"
+strip = true
+
+# Also add these in [package.metadata] or you can use cargo flags
+# cargo build --release -Z build-std=std,panic_abort -Z build-std-features=panic_immediate_abort
+
+# Post Build Compression
+upx --best --lzma your-binary  # Can reduce size by 50-70%
+
+# WebAssembly Profile
+[profile.wasm]
+inherits = "release"
+opt-level = "z"         # Size critical for web
+lto = true
+panic = "abort"         # WASM doesn't support unwinding well
+strip = true

@@ -1,0 +1,12 @@
+[package]
+name = "websift"
+version = "1.0.0"
+edition = "2021"
+authors = ["Sreeraj"]
+description = "Email, Phone Number, and Link Scraper Tool"
+
+[dependencies]
+reqwest  = { version = "0.13", features = ["blocking"] }
+regex    = "1"
+colored  = "3"
+once_cell = "1"   # lazy static regex compilation
