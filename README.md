@@ -181,9 +181,9 @@ Matches all `http://` and `https://` URLs found in the raw HTML. Trailing punctu
 
 | Crate | Version | Purpose |
 |---|---|---|
-| [`reqwest`](https://crates.io/crates/reqwest) | 0.12 | Blocking HTTP client with timeout, redirects, and User-Agent |
+| [`reqwest`](https://crates.io/crates/reqwest) | 0.13 | Blocking HTTP client with timeout, redirects, and User-Agent |
 | [`regex`](https://crates.io/crates/regex) | 1 | Email, phone, and link pattern matching |
-| [`colored`](https://crates.io/crates/colored) | 2 | Terminal color output |
+| [`colored`](https://crates.io/crates/colored) | 3 | Terminal color output |
 | [`once_cell`](https://crates.io/crates/once_cell) | 1 | Lazy static regex compilation (compiled once at startup) |
 
 All dependencies are managed automatically by Cargo — no manual installs needed.
