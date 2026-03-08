@@ -1,7 +1,7 @@
 # WebSift
 
 > **Email, Phone Number, and Link Scraper Tool**  
-> A fast, colored terminal scraper written in Rust — ported and enhanced from the original [`websift.sh`](https://github.com/s-r-e-e-r-a-j) bash script.
+> A fast, colored terminal scraper written in Rust — ported and enhanced from the original [`websift.sh`](https://github.com/s-r-e-e-r-a-j/WebSift) bash script.
 
 ```
    __          __  _        _____ _  __ _
