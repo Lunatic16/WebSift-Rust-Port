@@ -85,14 +85,14 @@ fn print_banner() {
       \  /\  /  __/ |_) |  ____) | | | | |_
        \/  \/ \___|_.__/  |_____/|_|_|  \__|
 
-                     Developer: Sreeraj
+                     Port Developer: Lunatic
 "#
         .bright_green()
     );
     println!("{}", "  Email, Phone Number, and Link Scraper Tool".cyan());
     println!(
         "{}\n",
-        "  GitHub: https://github.com/s-r-e-e-r-a-j".bright_yellow()
+        "  GitHub: https://github.com/Lunatic16".bright_yellow()
     );
 }
 
