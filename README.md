@@ -71,7 +71,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 Clone the repository and build a release binary:
 
 ```bash
-git clone https://github.com/Lunatic16/WebSift-Rust-Port
+git clone https://github.com/Lunatic16/WebSift-Rust-Port.git
 cd websift
 cargo build --release
 ```
