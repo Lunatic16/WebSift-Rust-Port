@@ -12,6 +12,14 @@
        \/  \/ \___|_.__/  |_____/|_|_|  \__|
 
                  Developer: Sreeraj
+
+* Email, Phone Number, and Links Scraper Tool
+* GitHub: https://github.com/s-r-e-e-r-a-j
+                                                                                                                                  
+[!] Checking internet connection...                                                                                                                                                          
+[*] Connected to the internet.                                                                                                                                                               
+[*] Enter URL to begin :
+
 ```
 
 ---
@@ -63,7 +71,7 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 Clone the repository and build a release binary:
 
 ```bash
-git clone https://github.com/s-r-e-e-r-a-j/websift
+git clone https://github.com/Lunatic16/WebSift-Rust-Port
 cd websift
 cargo build --release
 ```
