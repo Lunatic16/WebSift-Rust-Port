@@ -11,10 +11,10 @@
       \  /\  /  __/ |_) |  ____) | | | | |_
        \/  \/ \___|_.__/  |_____/|_|_|  \__|
 
-                 Developer: Sreeraj
+                 Port Developer: Lunatic16
 
 * Email, Phone Number, and Links Scraper Tool
-* GitHub: https://github.com/s-r-e-e-r-a-j
+* GitHub: https://github.com/Lunatic16
                                                                                                                                   
 [!] Checking internet connection...                                                                                                                                                          
 [*] Connected to the internet.                                                                                                                                                               
